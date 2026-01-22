@@ -40,3 +40,4 @@ Create a `.env` file based on `.env.example` and configure:
 - JWT_SECRET_KEY
 - MYSQL_URL
 - MONGO_URI
+  
