@@ -1,43 +1,36 @@
-# Backend - Fleet Management Platform
 
-This folder contains the Flask backend for the Fleet Management Platform. The backend is responsible for authentication, business logic, and database interactions.
+
+# Backend — Fleet Management Platform (Propelx)
+
+This folder contains the NestJS backend API for the Fleet Management Platform.  
+It handles authentication, role-based access control, multi-tenancy, background job processing, and core fleet business logic.
+
+## Architecture Overview
+
+- RESTful API built with NestJS
+- PostgreSQL for relational data
+- Redis for caching and queues
+- BullMQ for background job processing
+- JWT-based authentication
+- Role-Based Access Control (RBAC)
+- Multi-tenant data isolation
 
 ## Tech Stack
-- Python
-- Flask
-- Flask-JWT-Extended
-- Flask-SQLAlchemy
-- MySQL
-- MongoDB
 
-## Responsibilities
-- User authentication and authorization using JWT
-- Role-based access control (Admin, Manager, Supervisor, etc.)
-- RESTful API development for fleet operations
-- Input validation and structured error handling
-- Database integration with MySQL and MongoDB
-
-## Folder Structure
-app/
-  routes/      # API routes
-  models/      # Database models
-  services/    # Business logic
-  utils/       # Helper utilities
+- NestJS
+- TypeScript
+- TypeORM
+- PostgreSQL
+- Redis
+- BullMQ
+- JWT Authentication
 
 ## Running the Backend
 
-1. Create and activate virtual environment
-2. Install dependencies:
-3. Set environment variables using `.env`
-4. Start the server:
+```bash
+npm install
+npm run start:dev
 
-## Environment Variables
 
-Create a `.env` file based on `.env.example` and configure:
-
-- FLASK_ENV
-- SECRET_KEY
-- JWT_SECRET_KEY
-- MYSQL_URL
-- MONGO_URI
-  
+npm install
+npm run start:dev
