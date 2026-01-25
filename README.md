@@ -1,4 +1,4 @@
-🚚 PropelX — Enterprise Fleet Management Platform
+🚚 PropelX — Enterprise Fleet Management Platform 
 
 PropelX is a full-stack, enterprise-grade fleet management and analytics platform designed to help organizations improve safety, reduce operational costs, and gain real-time visibility across their vehicle fleet.
 
