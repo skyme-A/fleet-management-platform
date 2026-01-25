@@ -24,5 +24,11 @@ A full-stack, multi-tenant Fleet Management Platform built with Next.js and Nest
 ## 🌐 Landing Page
 
 ![Landing Page CTA](screenshots/landing-page-cta.png)
+### Main Dashboard 
+![Main Dashboard](screenshots/main-dashboard.png)
+###  Mobile App
+![Mobile App](screenshots/mobile-app.png)
+
+
 
 
