@@ -1,0 +1,4 @@
+"scripts": {
+  "seed": "ts-node src/seed.ts"
+}
+
