@@ -67,7 +67,9 @@ Prometheus — Metrics & monitoring
 
 Grafana — Observability dashboards
 
-dashboards
+🏗 System Architecture
+
+PropelX follows a modular, service-oriented architecture optimized for scalability and maintainability:
 
 flowchart TB
     FE[Next.js Web Dashboard]
