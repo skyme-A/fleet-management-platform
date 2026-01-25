@@ -1,6 +1,134 @@
-# Fleet Management Platform (Propelx)
+🚚 PropelX — Enterprise Fleet Management Platform
 
-A full-stack, multi-tenant Fleet Management Platform built with Next.js and NestJS, featuring JWT authentication, role-based access control, PostgreSQL, Redis, and background job processing with BullMQ.
+PropelX is a full-stack, enterprise-grade fleet management and analytics platform designed to help organizations improve safety, reduce operational costs, and gain real-time visibility across their vehicle fleet.
+
+The platform provides real-time tracking, advanced analytics, role-based access control, and automated maintenance workflows — enabling fleet operators to make data-driven decisions at scale.
+
+Built with modern, production-ready technologies, PropelX demonstrates best practices in scalability, performance, and maintainability.
+
+✨ Key Features
+
+📊 Real-time fleet & driving analytics
+
+🚦 Driver safety scoring & behavior monitoring
+
+🛠 Predictive maintenance & scheduling
+
+🗺 Live vehicle tracking & geo-visualization
+
+👥 Multi-role access (Admin, Manager, Supervisor, Driver)
+
+⚡ Background job processing for alerts & reports
+
+📈 Operational KPIs & performance dashboards
+
+🔐 Secure JWT-based authentication & authorization
+
+🧩 Multi-tenant architecture support
+
+🧱 Tech Stack
+Frontend
+
+Next.js — React framework for SSR & performance
+
+TypeScript — Type-safe frontend development
+
+Tailwind CSS — Utility-first styling
+
+shadcn/ui — Modern, accessible UI components
+
+Redux Toolkit — Global state management
+
+React Query (TanStack Query) — Server state & caching
+
+Backend
+
+NestJS — Scalable Node.js framework
+
+PostgreSQL — Primary relational database
+
+TypeORM — ORM for database access
+
+Redis — Caching & job queues
+
+BullMQ — Background job processing
+
+JWT Authentication — Secure auth flows
+
+Role-Based Access Control (RBAC)
+
+DevOps & Infrastructure
+
+Docker — Containerized services
+
+GitLab CI/CD — Automated build & deployment pipelines
+
+Prometheus — Metrics & monitoring
+
+Grafana — Observability dashboards
+
+dashboards
+
+🏗 System Architecture
+
+PropelX follows a modular, service-oriented architecture optimized for scalability and maintainability:
+┌────────────────────┐
+│     Next.js App    │
+│  (Web Dashboard)   │
+└─────────▲──────────┘
+          │ HTTPS / JWT
+┌─────────┴──────────┐
+│      NestJS API    │
+│  (Auth, Fleet,     │
+│   Drivers, Alerts, │
+│   Analytics, RBAC) │
+└─────▲───────▲──────┘
+      │       │
+┌─────┴───┐ ┌─┴────────┐
+│PostgreSQL│ │  Redis   │
+│  (Data)  │ │ Cache &  │
+└──────────┘ │ BullMQ   │
+              └────▲────┘
+                   │
+            ┌──────┴──────┐
+            │ Background  │
+            │   Workers   │
+            │ (Alerts,    │
+            │  Reports,   │
+            │  Processing)│
+            └─────────────┘
+
+Architecture Highlights
+
+Modular NestJS services for fleet, drivers, analytics, and maintenance
+
+Background workers for heavy processing (alerts, reports, safety scoring)
+
+Redis + BullMQ for reliable job queues
+
+JWT + RBAC for fine-grained access control
+
+React Query + API caching for high-performance dashboards
+
+Multi-tenant design for enterprise readiness
+
+🎯 Why This Project Matters
+
+PropelX demonstrates real-world SaaS engineering skills, including:
+
+Designing scalable backend architectures
+
+Building complex analytics dashboards
+
+Implementing background job systems
+
+Managing role-based security
+
+Creating production-ready CI/CD pipelines
+
+Observability & monitoring with Prometheus/Grafana
+
+This project reflects how enterprise fleet platforms like Samsara, Motive, or Verizon Connect are built in production environments.
 ## 📸 UI Screenshots
 
 ### Analytics Dashboard
