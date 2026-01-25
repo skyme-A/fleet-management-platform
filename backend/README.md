@@ -1,36 +1,147 @@
+⚙️ PropelX Backend — Fleet Management API
 
+The PropelX backend is a scalable, production-style API that powers the PropelX fleet management platform. It provides secure access to fleet data, analytics, alerts, and maintenance workflows through a modular, service-oriented architecture.
 
-# Backend — Fleet Management Platform (Propelx)
+This API is designed to support real-world SaaS use cases, including background processing, analytics aggregation, and role-based access control.
+.
 
-This folder contains the NestJS backend API for the Fleet Management Platform.  
-It handles authentication, role-based access control, multi-tenancy, background job processing, and core fleet business logic.
+🧱 Tech Stack
 
-## Architecture Overview
+Node.js — Server runtime
 
-- RESTful API built with NestJS
-- PostgreSQL for relational data
-- Redis for caching and queues
-- BullMQ for background job processing
-- JWT-based authentication
-- Role-Based Access Control (RBAC)
-- Multi-tenant data isolation
+NestJS — Scalable backend framework
 
-## Tech Stack
+TypeScript — Type-safe backend development
 
-- NestJS
-- TypeScript
-- TypeORM
-- PostgreSQL
-- Redis
-- BullMQ
-- JWT Authentication
+PostgreSQL — Primary relational database
 
-## Running the Backend
+Redis — Caching & background jobs
 
-```bash
+BullMQ — Job queue & background processing
+
+JWT Authentication — Secure API access
+
+Swagger (OpenAPI) — API documentation
+
+✨ Core Features
+
+🔐 JWT-based authentication & RBAC
+
+🚚 Fleet & vehicle management APIs
+
+👨‍✈️ Driver management
+
+📊 Analytics & KPI aggregation
+
+🛠 Maintenance scheduling & alerts
+
+🔁 Background job processing
+
+⚡ Redis caching for hot paths
+
+📘 Interactive Swagger API docs
+
+📦 Project Structure
+backend/
+  src/
+    main.ts
+    app.module.ts
+    auth/
+    fleet/
+    drivers/
+    analytics/
+    maintenance/
+  Dockerfile
+  .dockerignore
+  package.json
+  tsconfig.json
+  README.md
+
+🚀 Getting Started
+Prerequisites
+Node.js 18+
+
+PostgreSQL
+
+Redis
+
+Docker (optional)
+
+Installation
 npm install
-npm run start:dev
+
+Environment Variables
+
+Create a .env file:
+
+DATABASE_URL=postgresql://user:password@localhost:5432/propelx
+REDIS_URL=redis://localhost:6379
+JWT_SECRET=super-secret
+NODE_ENV=development
+
+Environment Variables
+
+Create a .env file:
+DATABASE_URL=postgresql://user:password@localhost:5432/propelx
+REDIS_URL=redis://localhost:6379
+JWT_SECRET=super-secret
+NODE_ENV=development
+
+Run with Docker
+docker build -t propelx-backend .
+docker run -p 3000:3000 propelx-backend
 
 
-npm install
-npm run start:dev
+📘 API Documentation (Swagger)
+http://localhost:3000/api/docs
+
+🌱 Seed Data
+npm run seed
+
+🔁 Background Jobs
+
+The backend uses BullMQ + Redis for:
+
+Alert generation
+
+Maintenance scheduling
+
+Safety score recalculation
+
+Report generation
+
+generation
+
+🔐 Security
+
+JWT authentication
+
+Role-Based Access Control (RBAC)
+
+Environment-based secrets
+
+Rate limiting (optional)
+
+)
+
+🛣 Roadmap
+
+WebSocket-based real-time updates
+
+ML-based predictive maintenance
+
+Multi-region deployment
+
+Advanced analytics pipelines
+
+pipelines
+
+🔗 Related Projects
+
+Frontend Web App: (add link here)
+
+Main Project README: (add link here)
+
+👨‍💻 Author
+
+Built as part of the PropelX Fleet Management Platform.
