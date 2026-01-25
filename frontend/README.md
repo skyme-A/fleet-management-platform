@@ -96,3 +96,15 @@ Real-time charts & visualizations
 Mobile-responsive design
 
 UI component library (Tailwind / shadcn)
+
+)
+
+🔗 Related Repositories
+
+Backend API: (add link here)
+
+Main Project: PropelX Fleet Management Platform
+
+👨‍💻 Author
+
+Built as part of the PropelX full-stack fleet management platform.
