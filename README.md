@@ -163,6 +163,22 @@ This project reflects how enterprise fleet platforms like Samsara, Motive, or Ve
 ### Mobile App Overview
 ![Mobile App](mobile-app.png)
 
+## 🌍 Live Demo
+
+Frontend: Coming soon  
+Backend API: Coming soon  
+API Docs (Swagger): /api/docs  
+
+## 🎥 Demo Video
+
+Coming soon
+
+## 🔑 Demo Credentials (Demo Only)
+
+Email: admin@demo.com  
+Password: demo123
+
+
 
 
 
