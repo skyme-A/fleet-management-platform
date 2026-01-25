@@ -4,7 +4,7 @@ A full-stack, multi-tenant Fleet Management Platform built with Next.js and Nest
 ## 📸 UI Screenshots
 
 ### Analytics Dashboard
-![Analytics Dashboard](analytics-dashboard.png.png)
+![Analytics Dashboard](analytics-dashboard.png)
 
 ### Drivers & Maintenance Management
 ![Drivers & Maintenance Management](drivers-maintenance-management.png)
