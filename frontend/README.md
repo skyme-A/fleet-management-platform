@@ -1,28 +1,98 @@
-# Frontend - Fleet Management Platform
+🚀 PropelX Frontend — Web Dashboard
 
-This folder contains the React frontend for the Fleet Management Platform. It provides the user interface for managing fleet operations.
+The PropelX frontend is a modern web dashboard built to provide real-time fleet visibility, analytics, and operational workflows for fleet managers and administrators.
 
-## Tech Stack
-- React
-- JavaScript
-- Tailwind CSS
-- Axios
+This application consumes the PropelX backend API and presents role-based dashboards, fleet management views, and analytics insights.
 
-## Responsibilities
-- Authentication UI (login/register)
-- Dashboard and fleet management screens
-- Integration with Flask REST APIs
-- Form handling and validation
-- Responsive UI design
+🧱 Tech Stack
 
-## Folder Structure
-src/
-  components/   # Reusable UI components
-  pages/        # Application pages
-  services/     # API layer (Axios)
-  hooks/        # Custom hooks
+Next.js — React framework for server-side rendering
 
-## Running the Frontend
+React 18 — Component-based UI
 
-1. Install dependencies:
-2. Start development server:
+TypeScript — Type safety (optional but recommended)
+
+Axios — API client for backend communication
+✨ Features
+
+📊 Fleet dashboard with real-time KPIs
+
+🚚 Fleet overview and vehicle status
+
+📈 Analytics views
+
+🧭 Shared layout with navigation
+
+🔌 API integration with backend
+
+⚙️ Environment-based configuration
+
+✨ Features
+
+📊 Fleet dashboard with real-time KPIs
+
+🚚 Fleet overview and vehicle status
+
+📈 Analytics views
+
+🧭 Shared layout with navigation
+
+🔌 API integration with backend
+
+📦 Project Structure
+
+frontend/
+  components/
+    Layout.tsx
+  lib/
+    api.ts
+  pages/
+    index.tsx        # Dashboard
+    fleet.tsx        # Fleet Overview
+    analytics.tsx    # Analytics
+    _app.tsx
+  .env.example
+  package.json
+  README.md
+🚀 Getting Started
+Prerequisites
+
+Node.js 18+
+
+Backend API running
+
+Installation
+npm install
+Environment Setup
+
+Create a .env.local file:
+NEXT_PUBLIC_API_URL=http://localhost:3000
+
+Run Development Server
+npm run dev
+
+Open:
+http://localhost:3000
+
+🔌 API Integration
+
+The frontend communicates with the backend via Axios.
+
+API client is defined in:
+lib/api.ts
+Example:
+getFleetVehicles()
+getDashboardSummary()
+
+
+🛣 Roadmap
+
+Authentication & protected routes
+
+Role-based UI rendering
+
+Real-time charts & visualizations
+
+Mobile-responsive design
+
+UI component library (Tailwind / shadcn)
