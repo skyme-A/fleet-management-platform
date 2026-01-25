@@ -69,37 +69,46 @@ Grafana — Observability dashboards
 
 dashboards
 
-🏗 System Architecture
+flowchart TB
+    FE[Next.js Web Dashboard]
+    MOBILE[Mobile App Client]
+    API[NestJS API Server]
+    AUTH[Auth & RBAC Module]
+    FLEET[Fleet Management Module]
+    DRIVERS[Drivers Module]
+    ANALYTICS[Analytics Module]
+    ALERTS[Alerts & Notifications Module]
+    DB[(PostgreSQL)]
+    REDIS[(Redis Cache)]
+    QUEUE[BullMQ Job Queue]
+    WORKERS[Background Workers]
+    MONITOR[Prometheus & Grafana]
 
-PropelX follows a modular, service-oriented architecture optimized for scalability and maintainability:
-┌────────────────────┐
-│     Next.js App    │
-│  (Web Dashboard)   │
-└─────────▲──────────┘
-          │ HTTPS / JWT
-┌─────────┴──────────┐
-│      NestJS API    │
-│  (Auth, Fleet,     │
-│   Drivers, Alerts, │
-│   Analytics, RBAC) │
-└─────▲───────▲──────┘
-      │       │
-┌─────┴───┐ ┌─┴────────┐
-│PostgreSQL│ │  Redis   │
-│  (Data)  │ │ Cache &  │
-└──────────┘ │ BullMQ   │
-              └────▲────┘
-                   │
-            ┌──────┴──────┐
-            │ Background  │
-            │   Workers   │
-            │ (Alerts,    │
-            │  Reports,   │
-            │  Processing)│
-            └─────────────┘
+    FE -->|HTTPS + JWT| API
+    MOBILE -->|HTTPS + JWT| API
 
-Architecture Highlights
+    API --> AUTH
+    API --> FLEET
+    API --> DRIVERS
+    API --> ANALYTICS
+    API --> ALERTS
 
+    AUTH --> DB
+    FLEET --> DB
+    DRIVERS --> DB
+    ANALYTICS --> DB
+    ALERTS --> DB
+
+    API --> REDIS
+    API --> QUEUE
+    QUEUE --> WORKERS
+
+    API --> MONITOR
+    WORKERS --> MONITOR
+
+
+  
+      
 Modular NestJS services for fleet, drivers, analytics, and maintenance
 
 Background workers for heavy processing (alerts, reports, safety scoring)
